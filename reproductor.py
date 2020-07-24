@@ -89,7 +89,7 @@ class ReproductorMusical(tk.Frame):
 
 
         #Titulo de la app
-        self.barra=tk.Label(self.container, text="Reproductor de música BIT", font="Times 12 italic")
+        self.barra=tk.Label(self.container, text="Reproductor de música", font="Times 12 italic")
         self.barra.grid(column=1,row=0, columnspan=3)
 
         self.container.protocol("WM_DELETE_WINDOW", self.cierre)        
@@ -204,7 +204,7 @@ class ReproductorMusical(tk.Frame):
                 time.sleep(1)
                 current_time += 1
 container=tk.Tk()
-container.title("Reproductor de música proyecto 3 BIT Bootcamp")
+container.title("Proyecto reproductor de música")
 container.geometry("500x250")
 app = ReproductorMusical(container)
 app.mainloop()
